@@ -1,67 +1,71 @@
-import Image from "next/image";
+import React from "react";
+// import Image from "next/image";
 import DynamicSvgIcon from "../../svg/DynamicSvgIcon";
-import BioCode from "./BioCode.mdx"
-import Me from "../../../../public/me.jpg"
+// @ts-ignore: MDX module not declared
+import BioCode from "./BioCode.mdx";
+// import Me from "../../../../public/me.jpg";
 
+// remplace ton ancien `experiences` par celui-ci
 const experiences = [
   {
-    year: "2025",
-    title: "Internship Backend Developer ",
-    company: "PT. Eka Abhipraya Semesta",
-    period: "March - July 2025",
+    year: "2023",
+    title: "IT Intern — Technical Support & Web Development",
+    company: "Quantium Tech — Antananarivo (Soarano)",
+    period: "06/2023 – 08/2023",
     details: [
-      "Developed and maintained backend services using Express.js for a government information system called SIDATA, designed for the city of South Tangerang (Tangsel).",
-      "Designed and implemented RESTful APIs to handle community service data and generate QR codes for simplified access to public services.",
+      "Designed and contributed to the development of various websites.",
+      "Provided technical support: software installation and hardware maintenance.",
+      "Assisted users with hardware and software issues.",
     ],
-    icon: "react",
-    color: "bg-[#61DAFB]",
+    icon: "it",
+    color: "bg-[#6b7280]",
   },
   {
-    year: "2024",
-    title: "Internship Fullstack Developer",
-    company: "PT. Radar Teknologi Komputer",
-    period: "September - December 2024",
-    icon: "nodejs",
+    year: "2024 - Present",
+    title: "Web Developer / Intern — Network & Telecom Administrator",
+    company: "EDEN DISTRIBUTION — Antananarivo (Anosizato)",
+    period: "07/2024 – Present",
     details: [
-      "Worked on and managed several real projects for clients.",
-      "Contributed to the development of various web projects using modern technologies such as Laravel, Filament, and TailwindCSS."
+      "Analyzed and documented the company’s IT architecture.",
+      "Studied the infrastructure diagram (server distribution, switches, access points).",
+      "Monitored and maintained the local network (LAN); assisted users with IT issues.",
+      "Participated in network security tasks: updates, firewall configuration.",
+      "Developed professional websites for various business sectors (e-commerce, hospitality, outsourcing).",
+      "Managed relational databases (MySQL, SQL Server, Sage Compta) and NoSQL databases (MongoDB, Firebase).",
+      "Performed Linux administration: server configuration (Nginx, PM2), domain/DNS management.",
+      "Implemented secure authentication systems (JWT, OAuth).",
+      "Built a secure full-stack web application for managing lottery events.",
+      "Designed and deployed automation pipelines using n8n (email/SMS notifications, draw orchestration, automatic result publishing via API).",
     ],
-    color: "bg-[#3c873a]",
-  },
-  {
-    year: "2024",
-    title: "Reasearch and Development",
-    company: "Informatics Engineering Student Association (HMIF) ",
-    period: "February 2024 - Present",
-    icon: "typescript",
+    icon: "server",
     color: "bg-[#3178C6]",
-    details: [
-      "Responsible for teaching full-stack web development through workshops and bootcamps organized by HMIF.",
-      "Developed full-stack training modules that mirror industry practices by integrating collaboration between frontend and backend teams. "
-    ]
   },
-  {
-    title: "Presenter PMB",
-    company: "Indonesian Institute of Technology",
-    period: "January 2024 - Present",
-    details: [
-      "Representing the university at strategic event booths to promote academic programs to prospective students.",
-      "Delivering engaging presentations about study programs, campus facilities, and the institution's key advantages. ",
-    ],
-  },
-  {
-    title: "Computer Science Lab Assistant",
-    company: "Indonesian Institute of Technology",
-    period: "September 2023 - Present",
-    details: [
-      "Delivering guidance to students to enhance their understanding of fundamental and advanced programming concepts.",
-      "Assessing and grading students based on their performance in tasks and projects.",
-    ],
-  },
-  // Tambahkan pengalaman lain sesuai kebutuhan
 ];
 
-const Bio =  () => {
+const Bio = () => {
+  const texts = {
+    bio: {
+      text: `/**
+ * Bio
+ * Hi! I'm Hari Jess, a passionate full-stack developer specializing in
+ * web & mobile development. With 2 years of experience, I am committed
+ * to creating modern, elegant, and sustainable solutions, while
+ * emphasizing code quality and user experience.
+ */`,
+    },
+
+    objectives: {
+      text: `/**
+ * Objectives
+ * My goal is to become a developer capable of transforming complex
+ * ideas into reliable and intuitive applications. Determined to
+ * progress, I am constantly learning new technologies, strengthening
+ * my skills, and always looking for new challenges to evolve in the
+ * field of web & mobile development.
+ */`,
+    },
+  };
+
   const currentFavoriteTechStack = [
     { name: "NextJS", icon: "nextjs", color: "fill-secondary" },
     { name: "React.js", icon: "react", color: "fill-[#61dbfb]" },
@@ -70,6 +74,8 @@ const Bio =  () => {
     { name: "TailwindCSS", icon: "tailwind", color: "fill-[#3490dc]" },
     { name: "Node.js", icon: "nodejs", color: "fill-[#3c873a]" },
     { name: "Express.js", icon: "express", color: "fill-[#fff]" },
+    { name: "n8n", icon: "n8n", color: "fill-[#fff]" },
+    { name: "React Native", icon: "reactNative", color: "fill-[#61dbfb]" },
   ];
 
   return (
@@ -78,34 +84,25 @@ const Bio =  () => {
         <BioCode />
       </div>
       <div className="px-4 pt-4 pb-8 overflow-auto">
-        <Image
+        {/* <Image
           src={Me}
           width={140}
           height={140}
           alt="profile picture"
           className="rounded float-left mr-4 mb-1"
           placeholder="blur"
-        />
+        /> */}
         <div className="space-y-3">
-          <p>
-            Hey there, I'm Raj Alam, but you can call me Alam. I've got around 4
-            years of experience in Web Development. My coding journey began way
-            back in my first year of high school. and My first programming
-            language was Java, how did that happen? Well, here's the funny
-            story: I was curious about Web Development and how websites are
-            created. After reading some articles, I found out that JavaScript
-            was one of the languages used for web stuff. And guess what? I
-            thought Java was shorthand for JavaScript LOL. As a result, I began
-            searching for Java programming tutorials on YouTube.
-          </p>
-          <p>
-            After studying Java for a few months, I finally realized that Java
-            and JavaScript are actually different programming languages LOL!
-            Once I understood this distinction, I immediately switched to
-            JavaScript and started learning a lot about Web Development,
-            continuing up until now.
-          </p>
+          {Object.entries(texts).map(([key, { text }]) => (
+            <section key={key}>
+              {/* Affiche le bloc commentaire tel quel (monospace, préservant les sauts de ligne) */}
+              <pre className="rounded-lg p-3 font-mono text-sm bg-gray-50 opacity-50 whitespace-pre-wrap dark:bg-gray-900 dark:text-gray-100">
+                {text}
+              </pre>
+            </section>
+          ))}
         </div>
+        {/* Experiences */}
         <div className="mt-6">
           <h5 className="text-lg text-accent font-semibold mb-4">
             Experiences
@@ -121,27 +118,29 @@ const Bio =  () => {
                     <div className="w-4 h-4 rounded-full bg-accent border-4 border-primary shadow-lg transition-transform duration-300 group-hover:scale-110" />
                     {/* Line to next node */}
                     {idx < experiences.length - 1 && (
-                      <div className="w-1 h-24 bg-gradient-to-b from-accent/80 to-primary/30 mx-auto"></div>
+                      <div className="w-1 h-24 bg-gradient-to-b from-accent/80 to-primary/30 mx-auto" />
                     )}
                   </div>
                   {/* Content */}
                   <div className="ml-4 flex-1">
                     <div className="flex flex-col md:flex-row md:items-center gap-4 mb-1">
-                      <span className="font-bold text-lg text-accent ">{exp.title}</span>
-                      <span className="text-secondary text-[10px] flex-1 flex md:justify-end">{exp.period}</span>
+                      <span className="font-bold text-md text-accent ">
+                        {exp.title}
+                      </span>
+                      <span className="text-secondary text-[10px] flex-1 flex md:justify-end">
+                        {exp.period}
+                      </span>
                     </div>
-                    <div className="mb-2 text-secondary">
-                      {exp.company}
-                    </div>
-                      <ul className="list-disc list-outside text-textiary space-y-1 pl-5">
-                        {exp.details.map((detail, i) => (
-                          <li
-                            key={i}
-                            className="text-sm ml-0"
-                            dangerouslySetInnerHTML={{ __html: detail }}
-                          />
-                        ))}
-                      </ul>
+                    <div className="mb-2 text-secondary">{exp.company}</div>
+                    <ul className="list-disc list-outside text-textiary space-y-1 pl-5">
+                      {exp.details.map((detail, i) => (
+                        <li
+                          key={i}
+                          className="text-sm ml-0"
+                          dangerouslySetInnerHTML={{ __html: detail }}
+                        />
+                      ))}
+                    </ul>
                   </div>
                 </div>
               ))}
@@ -158,7 +157,7 @@ const Bio =  () => {
                 <div key={stack.icon} className="relative">
                   <DynamicSvgIcon
                     name={stack.icon}
-                    className={`w-10 ${stack.color}`}
+                    className={`w-8 ${stack.color}`}
                   />
                 </div>
               );
@@ -167,7 +166,7 @@ const Bio =  () => {
         </div>
         <div className="flex justify-start mt-10">
           <a
-            href="/CV Raj Alam - 2025.pdf" // Ganti dengan path CV kamu
+            href="/CV_Hari_Jess_2025.pdf" // Ganti dengan path CV kamu
             download
             className="group inline-flex items-center gap-2 px-6 py-2 rounded-lg bg-accent text-black font-bold shadow-lg hover:ring-2 ring-accent ring-offset-4 active:ring-offset-1 ring-offset-primary transition-all"
           >

@@ -3,6 +3,28 @@ import Image from "next/image";
 import DynamicSvgIcon from "../svg/DynamicSvgIcon";
 
 const Bio = () => {
+    bio: {
+          text: `/**
+    * Bio
+    * Hi! I'm Hari Jess, a passionate full-stack developer specializing in
+    * web & mobile development. With 2 years of experience, I am committed
+    * to creating modern, elegant, and sustainable solutions, while
+    * emphasizing code quality and user experience.
+    */`,
+    },
+
+    objectives: {
+      text: `/**
+    * Objectives
+    * My goal is to become a developer capable of transforming complex
+    * ideas into reliable and intuitive applications. Determined to
+    * progress, I am constantly learning new technologies, strengthening
+    * my skills, and always looking for new challenges to evolve in the
+    * field of web & mobile development.
+    */`,
+      },
+    };
+
   const currentFavoriteTechStack = [
     { name: "NextJS", icon: "nextjs", color: "fill-header-primary" },
     { name: "React.js", icon: "react", color: "fill-[#61dbfb]" },
@@ -21,24 +43,15 @@ const Bio = () => {
         alt="profile picture"
         className="rounded float-left mr-4 mb-1"
       />
-      <div className="space-y-4">
-        <p>
-          Hey there, I'm Raj Alam, but you can call me Alam. I've got around 4
-          years of experience in Web Development. My coding journey began way
-          back in my first year of high school. and My first programming
-          language was Java, how did that happen? Well, here's the funny story:
-          I was curious about Web Development and how websites are created.
-          After reading some articles, I found out that JavaScript was one of
-          the languages used for web stuff. And guess what? I thought Java was
-          shorthand for JavaScript LOL. As a result, I began searching for Java
-          programming tutorials on YouTube.
-        </p>
-        <p>
-          After studying Java for a few months, I finally realized that Java and
-          JavaScript are actually different programming languages LOL! Once I
-          understood this distinction, I immediately switched to JavaScript and
-          started learning a lot about Web Development, continuing up until now.
-        </p>
+      <div className="space-y-3">
+        {Object.entries(texts).map(([key, { text }]) => (
+          <section key={key}>
+            {/* Display the comment block as-is (monospace, preserving line breaks) */}
+            <pre className="rounded-lg p-3 font-mono text-sm bg-gray-50 border border-gray-200 whitespace-pre-wrap dark:bg-gray-900 dark:text-gray-100">
+              {text}
+            </pre>
+          </section>
+        ))}
       </div>
       <div className="mt-8">
         <h5 className="text-lg text-accent-primary font-semibold mb-2">
@@ -64,5 +77,6 @@ const Bio = () => {
 export default Bio
 ```
 
+export default ({ children }) => <div className="transparent line-numbers">{children}</div
 
-export default ({ children }) => <div className="transparent line-numbers">{children}</div>
+>
