@@ -71,9 +71,10 @@ const Navbar = () => {
         </ul>
 
         {/* Navbar-right - Contact Link */}
-        <div
+        <Link
+          href="/contact"
           className={`hidden lg:flex items-center h-full border-l border-line px-6 
-             button-hover  
+             button-hover  cursor-link
               ${
                 pathname === "/contact" ||
                 (subPath.length > 2 && "/" + subPath[1] === "/contact")
@@ -81,10 +82,8 @@ const Navbar = () => {
                   : ""
               } `}
         >
-          <Link href="/contact" className="cursor-link" title="_contact">
-            _contact
-          </Link>
-        </div>
+          <span>_contact</span>
+        </Link>
 
         {/* Navbar-mobile toggle */}
         <div
