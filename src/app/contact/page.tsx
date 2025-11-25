@@ -115,7 +115,7 @@ const Contact = () => {
                   <a
                     target="_blank"
                     href={contact.href}
-                    className="flex items-center gap-3 text-tertiary hover:text-accent transition-colors text-sm hover:button-hover hover:rounded-lg"
+                    className="cursor-link flex items-center gap-3 text-tertiary hover:text-accent transition-colors text-sm hover:button-hover hover:rounded-lg"
                     key={contact.name}
                     rel="noopener noreferrer"
                   >

@@ -3,9 +3,20 @@ export const projects = [
     id: 14,
     slug: "sidata",
     title: "SIDATA - Family Data Information System for South Tangerang",
-    description: "A web application for managing family data, population statistics, and data request services in South Tangerang City.",
+    description:
+      "A web application for managing family data, population statistics, and data request services in South Tangerang City.",
     thumbnail: "/projects/sidata/thumb.png",
-    screenshots: ["/projects/sidata/1.png", "/projects/sidata/2.png", "/projects/sidata/3.png", "/projects/sidata/4.png", "/projects/sidata/5.png", "/projects/sidata/6.png", "/projects/sidata/7.png", "/projects/sidata/8.png", "/projects/sidata/9.png"],
+    screenshots: [
+      "/projects/sidata/1.png",
+      "/projects/sidata/2.png",
+      "/projects/sidata/3.png",
+      "/projects/sidata/4.png",
+      "/projects/sidata/5.png",
+      "/projects/sidata/6.png",
+      "/projects/sidata/7.png",
+      "/projects/sidata/8.png",
+      "/projects/sidata/9.png",
+    ],
     link: "https://sidata.tangsel.go.id",
     tags: ["React.js", "Tailwind CSS", "Typescript", "Express.js", "MySQL"],
     category: "Information System",
@@ -15,21 +26,31 @@ export const projects = [
     contributors: 3,
     views: 2345,
     progress: 90,
-    funFact: "SIDATA is an internship project assigned by the mayor of South Tangerang.",
+    funFact:
+      "SIDATA is an internship project assigned by the mayor of South Tangerang.",
     features: [
       "Real-time population statistics",
       "Public data access via QR Code",
       "Interactive dashboard",
-      "Export data to Excel/PDF"
+      "Export data to Excel/PDF",
     ],
   },
   {
     id: 13,
     slug: "garmen",
     title: "GarmenTrack - Garment Factory Tracking & Inventory System",
-    description: "A platform to monitor production processes, raw material stock, and goods delivery in garment/textile factories.",
+    description:
+      "A platform to monitor production processes, raw material stock, and goods delivery in garment/textile factories.",
     thumbnail: "/projects/garmen/thumb.png",
-    screenshots: ["/projects/garmen/1.png", "/projects/garmen/2.png", "/projects/garmen/3.png", "/projects/garmen/4.png", "/projects/garmen/5.png", "/projects/garmen/6.png", "/projects/garmen/7.png"],
+    screenshots: [
+      "/projects/garmen/1.png",
+      "/projects/garmen/2.png",
+      "/projects/garmen/3.png",
+      "/projects/garmen/4.png",
+      "/projects/garmen/5.png",
+      "/projects/garmen/6.png",
+      "/projects/garmen/7.png",
+    ],
     link: "https://garmen-track.com",
     tags: ["Laravel", "Tailwind CSS", "Postgres"],
     category: "Information System",
@@ -39,22 +60,29 @@ export const projects = [
     contributors: 12,
     views: 1890,
     progress: 100,
-    funFact: "This project is a collaboration between Informatics students at the Indonesian Institute of Technology.",
+    funFact:
+      "This project is a collaboration between Informatics students at the Indonesian Institute of Technology.",
     features: [
       "Production process tracking",
       "Raw material stock management",
       "Goods delivery reports",
       "Multi-branch system",
-      "Multi-user roles"
+      "Multi-user roles",
     ],
   },
   {
     id: 12,
     slug: "forumkm",
     title: "ForUMKM - MSME Service Platform",
-    description: "A web application to help MSME actors promote products, find partners, and access business training.",
+    description:
+      "A web application to help MSME actors promote products, find partners, and access business training.",
     thumbnail: "/projects/forumkm/thumb.png",
-    screenshots: ["/projects/forumkm/1.png", "/projects/forumkm/2.png", "/projects/forumkm/3.png", "/projects/forumkm/4.png"],
+    screenshots: [
+      "/projects/forumkm/1.png",
+      "/projects/forumkm/2.png",
+      "/projects/forumkm/3.png",
+      "/projects/forumkm/4.png",
+    ],
     link: "https://forumkm.id",
     tags: ["Next.js", "Tailwind CSS", "Typescript"],
     category: "Web App",
@@ -64,20 +92,27 @@ export const projects = [
     contributors: 4,
     views: 3200,
     progress: 80,
-    funFact: "This project is the result of collaboration between students of the Indonesian Institute of Technology.",
+    funFact:
+      "This project is the result of collaboration between students of the Indonesian Institute of Technology.",
     features: [
       "MSME product marketplace",
       "Online training",
-      "Payment integration"
+      "Payment integration",
     ],
   },
   {
     id: 11,
     slug: "darunnajah",
     title: "SIAKAD - Darunnajah Academic Information System",
-    description: "Academic information system for managing student data, grades, attendance, and schedules at Darunnajah Islamic Boarding School.",
+    description:
+      "Academic information system for managing student data, grades, attendance, and schedules at Darunnajah Islamic Boarding School.",
     thumbnail: "/projects/darunnajah/thumb.png",
-    screenshots: ["/projects/darunnajah/1.png", "/projects/darunnajah/2.png", "/projects/darunnajah/3.png", "/projects/darunnajah/4.png"],
+    screenshots: [
+      "/projects/darunnajah/1.png",
+      "/projects/darunnajah/2.png",
+      "/projects/darunnajah/3.png",
+      "/projects/darunnajah/4.png",
+    ],
     link: "https://siakad.darunnajah.sch.id",
     tags: ["Angular", "Bootstrap", "Typescript", "Postgres"],
     category: "Information System",
@@ -87,23 +122,32 @@ export const projects = [
     contributors: 9,
     views: 2100,
     progress: 80,
-    funFact: "This project is a collaboration between Informatics students at the Indonesian Institute of Technology.",
+    funFact:
+      "This project is a collaboration between Informatics students at the Indonesian Institute of Technology.",
     features: [
       "Student data management",
       "Input & recap grades",
       "Online attendance",
       "Digital report card printing",
       "Human resource management",
-      "Student finance"
+      "Student finance",
     ],
   },
   {
     id: 10,
     slug: "noir",
     title: "Noir - Social Media App",
-    description: "A modern social media app with posting, comments, and dark mode features.",
+    description:
+      "A modern social media app with posting, comments, and dark mode features.",
     thumbnail: "/projects/noir/thumb.png",
-    screenshots: ["/projects/noir/1.png", "/projects/noir/2.png", "/projects/noir/3.png", "/projects/noir/4.png", "/projects/noir/5.png", "/projects/noir/6.png"],
+    screenshots: [
+      "/projects/noir/1.png",
+      "/projects/noir/2.png",
+      "/projects/noir/3.png",
+      "/projects/noir/4.png",
+      "/projects/noir/5.png",
+      "/projects/noir/6.png",
+    ],
     link: "https://noir-app.com",
     tags: ["Next.js", "Tailwind CSS", "Javascript", "Strapi"],
     category: "Web App",
@@ -113,7 +157,8 @@ export const projects = [
     contributors: 1,
     views: 4100,
     progress: 100,
-    funFact: "I created this app to deepen and implement my fullstack knowledge without searching the internet.",
+    funFact:
+      "I created this app to deepen and implement my fullstack knowledge without searching the internet.",
     features: [
       "Post with caption, Like, & comment",
       "Interact with other users",
@@ -126,9 +171,15 @@ export const projects = [
     id: 1,
     slug: "ayovote",
     title: "Ayovote - Online Voting Platform",
-    description: "An online voting platform for organizations, communities, and campus events that is safe and transparent.",
+    description:
+      "An online voting platform for organizations, communities, and campus events that is safe and transparent.",
     thumbnail: "/projects/ayovote/thumb.png",
-    screenshots: ["/projects/ayovote/1.png", "/projects/ayovote/2.png", "/projects/ayovote/3.png", "/projects/ayovote/4.png"],
+    screenshots: [
+      "/projects/ayovote/1.png",
+      "/projects/ayovote/2.png",
+      "/projects/ayovote/3.png",
+      "/projects/ayovote/4.png",
+    ],
     link: "https://ayovote.com",
     tags: ["Next.js", "Tailwind CSS", "Typescript", "MongoDB"],
     category: "Web App",
@@ -138,21 +189,32 @@ export const projects = [
     contributors: 3,
     views: 2800,
     progress: 100,
-    funFact: "This app was the final project for the Software Engineering course.",
+    funFact:
+      "This app was the final project for the Software Engineering course.",
     features: [
       "Real-time voting",
       "Visual results with statistics",
       "Export voting results to PDF",
-      "Login with Google auth"
+      "Login with Google auth",
     ],
   },
   {
     id: 2,
     slug: "kelasku",
     title: "Kelasku - Mobile Learning App",
-    description: "A mobile application for online learning, class discussions, and assignment submissions.",
+    description:
+      "A mobile application for online learning, class discussions, and assignment submissions.",
     thumbnail: "/projects/kelasku/thumb.png",
-    screenshots: ["/projects/kelasku/1.png", "/projects/kelasku/2.png", "/projects/kelasku/3.png", "/projects/kelasku/4.png", "/projects/kelasku/5.png", "/projects/kelasku/6.png", "/projects/kelasku/7.png", "/projects/kelasku/8.png"],
+    screenshots: [
+      "/projects/kelasku/1.png",
+      "/projects/kelasku/2.png",
+      "/projects/kelasku/3.png",
+      "/projects/kelasku/4.png",
+      "/projects/kelasku/5.png",
+      "/projects/kelasku/6.png",
+      "/projects/kelasku/7.png",
+      "/projects/kelasku/8.png",
+    ],
     link: "https://play.google.com/store/apps/details?id=com.kelasku.app",
     tags: ["React Native", "Expo", "Tailwind CSS"],
     category: "Mobile App",
@@ -162,21 +224,29 @@ export const projects = [
     contributors: 3,
     views: 1500,
     progress: 100,
-    funFact: "This app was the final project for a first semester college course.",
+    funFact:
+      "This app was the final project for a first semester college course.",
     features: [
       "Online classes",
       "Interactive quizzes",
       "Progress tracking",
-      "Profile customization"
+      "Profile customization",
     ],
   },
   {
     id: 3,
     slug: "monefy",
     title: "Monefy - Money Management Mobile App",
-    description: "A mobile application for recording income, expenses, and daily budgeting.",
+    description:
+      "A mobile application for recording income, expenses, and daily budgeting.",
     thumbnail: "/projects/monefy/thumb.jpeg",
-    screenshots: ["/projects/monefy/1.jpeg", "/projects/monefy/2.jpeg", "/projects/monefy/3.jpeg", "/projects/monefy/4.jpeg", "/projects/monefy/5.jpeg"],
+    screenshots: [
+      "/projects/monefy/1.jpeg",
+      "/projects/monefy/2.jpeg",
+      "/projects/monefy/3.jpeg",
+      "/projects/monefy/4.jpeg",
+      "/projects/monefy/5.jpeg",
+    ],
     link: "https://play.google.com/store/apps/details?id=com.monefy.app",
     tags: ["React Native", "Firebase", "Tailwind CSS", "Expo"],
     category: "Mobile App",
@@ -186,7 +256,8 @@ export const projects = [
     contributors: 3,
     views: 2100,
     progress: 100,
-    funFact: "This app was the final project for the Mobile Programming course.",
+    funFact:
+      "This app was the final project for the Mobile Programming course.",
     features: [
       "Record income & expenses",
       "Monthly, yearly, and daily budgeting",
@@ -199,9 +270,15 @@ export const projects = [
     id: 4,
     slug: "21cleanshoes",
     title: "21Cleanshoes - Online Shoe Laundry",
-    description: "A web application for ordering, tracking, and paying for shoe laundry online.",
+    description:
+      "A web application for ordering, tracking, and paying for shoe laundry online.",
     thumbnail: "/projects/21cleanshoes/thumb.png",
-    screenshots: ["/projects/21cleanshoes/1.png", "/projects/21cleanshoes/2.png", "/projects/21cleanshoes/3.png", "/projects/21cleanshoes/4.png"],
+    screenshots: [
+      "/projects/21cleanshoes/1.png",
+      "/projects/21cleanshoes/2.png",
+      "/projects/21cleanshoes/3.png",
+      "/projects/21cleanshoes/4.png",
+    ],
     link: "https://21cleanshoes.com",
     tags: ["Next.js", "Tailwind CSS", "Typescript", "Framer Motion"],
     category: "Web App",
@@ -211,11 +288,12 @@ export const projects = [
     contributors: 1,
     views: 900,
     progress: 80,
-    funFact: "This was my first client project, for my own cousin who owns a shoe laundry business.",
+    funFact:
+      "This was my first client project, for my own cousin who owns a shoe laundry business.",
     features: [
       "Order online via email/whatsapp",
       "Interactive UI",
-      "Testimonials"
+      "Testimonials",
     ],
   },
 ];

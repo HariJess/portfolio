@@ -151,7 +151,7 @@ const Footer = () => {
                 setShowTheme(!showTheme);
                 setShowSettings(false);
               }}
-              className="flex gap-2 items-center justify-between cursor-pointer hover:opacity-80 transition-opacity"
+              className="flex gap-2 items-center justify-between cursor-pointer button-hover p-2 transition-opacity"
             >
               <div className="flex gap-2 items-center">
                 <DynamicSvgIcon name="moon" className="w-6 fill-accent" />
