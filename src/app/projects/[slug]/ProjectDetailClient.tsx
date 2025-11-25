@@ -7,7 +7,13 @@ import { tagIconColorList } from "@/constant/tagIconColor";
 
 // TESTING
 
-const ProjectDetailClient = ({ project, allProjects }: { project: any, allProjects: any[] }) => {
+const ProjectDetailClient = ({
+  project,
+  allProjects,
+}: {
+  project: any;
+  allProjects: any[];
+}) => {
   // Related projects: hanya berdasarkan category yang sama
   const relatedProjects = allProjects
     .filter((p) => p.category === project.category && p.id !== project.id)
@@ -34,7 +40,18 @@ const ProjectDetailClient = ({ project, allProjects }: { project: any, allProjec
 
   function formatDate(dateString: string) {
     const months = [
-      "Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
     ];
     const date = new Date(dateString);
     const day = date.getDate();
@@ -47,25 +64,43 @@ const ProjectDetailClient = ({ project, allProjects }: { project: any, allProjec
     <div className="w-full h-full overflow-hidden flex">
       <div className="hidden md:flex w-[275px] border-r border-line bg-primary flex-col items-center gap-6 py-8 px-4 relative">
         {/* Decorative SVG */}
-        <svg className="absolute -top-10 -left-10 w-48 h-48 opacity-20 z-0" viewBox="0 0 1114 1030" fill="none">
+        <svg
+          className="absolute -top-10 -left-10 w-48 h-48 opacity-20 z-0"
+          viewBox="0 0 1114 1030"
+          fill="none"
+        >
           <g opacity="0.4">
-            <path d="M723.946 855.519L510.032 804.132L420.663 739.469L447.226 568.957L622.649 549.391L621.041 427.647L823.309 373.392L953.602 404.691L871.165 670.797L743.892 703.987L723.946 855.519Z" fill="#43d9ad"/>
+            <path
+              d="M723.946 855.519L510.032 804.132L420.663 739.469L447.226 568.957L622.649 549.391L621.041 427.647L823.309 373.392L953.602 404.691L871.165 670.797L743.892 703.987L723.946 855.519Z"
+              fill="#43d9ad"
+            />
           </g>
         </svg>
         {/* Author */}
-        <div className="flex flex-col items-center gap-2 z-10">
-          <Image src="/me.jpg" alt="Raj Alam" width={64} height={64} className="rounded-full border-2 border-accent shadow-lg" />
+        {/* <div className="flex flex-col items-center gap-2 z-10">
+          <Image
+            src="/me.jpg"
+            alt="Raj Alam"
+            width={64}
+            height={64}
+            className="rounded-full border-2 border-accent shadow-lg"
+          />
           <span className="text-accent font-bold text-lg">Raj Alam</span>
           <span className="text-xs text-secondary">Ordinary Developer</span>
-        </div>
+        </div> */}
         {/* Project Progress Bar */}
         <div className="w-full mt-2 z-10">
           <div className="flex justify-between text-xs text-secondary mb-1">
             <span>Progress</span>
-            <span className="text-accent font-semibold">{project.progress}%</span>
+            <span className="text-accent font-semibold">
+              {project.progress}%
+            </span>
           </div>
           <div className="w-full h-2 bg-line rounded-full overflow-hidden">
-            <div className="h-full bg-accent rounded-full transition-all" style={{ width: `${project.progress}%` }} />
+            <div
+              className="h-full bg-accent rounded-full transition-all"
+              style={{ width: `${project.progress}%` }}
+            />
           </div>
         </div>
         {/* Project Quick Info */}
@@ -97,7 +132,8 @@ const ProjectDetailClient = ({ project, allProjects }: { project: any, allProjec
           <span>{project.funFact}</span>
         </div>
         {/* CTA Button */}
-        <Link href={"/contact"}
+        <Link
+          href={"/contact"}
           className="mt-2 w-full py-2 px-4 text-center hover:ring-2 ring-accent ring-offset-4 active:ring-offset-1 ring-offset-primary transition-all rounded-lg font-bold shadow
             bg-accent text-black hover:bg-primary hover:text-white
             dark:bg-accent dark:text-black dark:hover:bg-primary dark:hover:text-white
@@ -115,26 +151,39 @@ const ProjectDetailClient = ({ project, allProjects }: { project: any, allProjec
         {/* Sidebar Mobile */}
         <div className="flex md:hidden flex-col order-4  gap-6 py-6 px-4 bg-primary rounded-xl mb-6">
           {/* Author */}
-          <div className="flex flex-col it order-1ems-center gap-2 z-10">
-            <Image src="/me.jpg" alt="Raj Alam" width={64} height={64} className="rounded-full border-2 border-accent shadow-lg" />
+          {/* <div className="flex flex-col it order-1ems-center gap-2 z-10">
+            <Image
+              src="/me.jpg"
+              alt="Raj Alam"
+              width={64}
+              height={64}
+              className="rounded-full border-2 border-accent shadow-lg"
+            />
             <span className="text-accent font-bold text-lg">Raj Alam</span>
             <span className="text-xs text-secondary">Ordinary Developer</span>
-          </div>
+          </div> */}
           {/* Project Progress Bar */}
           <div className="w-full mt-2 z-10">
             <div className="flex justify-between text-xs text-secondary mb-1">
               <span>Progress</span>
-              <span className="text-accent font-semibold">{project.progress}%</span>
+              <span className="text-accent font-semibold">
+                {project.progress}%
+              </span>
             </div>
             <div className="w-full h-2 bg-line rounded-full overflow-hidden">
-              <div className="h-full bg-accent rounded-full transition-all" style={{ width: `${project.progress}%` }} />
+              <div
+                className="h-full bg-accent rounded-full transition-all"
+                style={{ width: `${project.progress}%` }}
+              />
             </div>
           </div>
           {/* Project Quick Info */}
           <div className="w-full mt-2 space-y-2 text-xs z-10">
             <div className="flex justify-between">
               <span className="text-secondary">Status:</span>
-              <span className="text-accent font-semibold">{project.status}</span>
+              <span className="text-accent font-semibold">
+                {project.status}
+              </span>
             </div>
             <div className="flex justify-between">
               <span className="text-secondary">Created:</span>
@@ -159,7 +208,8 @@ const ProjectDetailClient = ({ project, allProjects }: { project: any, allProjec
             <span>{project.funFact}</span>
           </div>
           {/* CTA Button */}
-          <Link href={"/contact"}
+          <Link
+            href={"/contact"}
             className="mt-6 w-full text-center py-2 rounded-lg font-bold shadow transition
               bg-accent text-black hover:bg-primary hover:text-white
               dark:bg-accent dark:text-black dark:hover:bg-primary dark:hover:text-white
@@ -174,20 +224,29 @@ const ProjectDetailClient = ({ project, allProjects }: { project: any, allProjec
         </div>
         {/* Info Section */}
         <div className="flex flex-col gap-6 min-w-0 order-1 md:order-2 px-4">
-          <h1 className="text-2xl md:text-4xl font-extrabold text-accent drop-shadow">{project.title}</h1>
-          <p className="text-base md:text-lg text-secondary leading-relaxed drop-shadow-md">{project.description}</p>
+          <h1 className="text-2xl md:text-4xl font-extrabold text-accent drop-shadow">
+            {project.title}
+          </h1>
+          <p className="text-base md:text-lg text-secondary leading-relaxed drop-shadow-md">
+            {project.description}
+          </p>
           {/* Tech Stack Tags */}
           <div className="flex flex-wrap gap-2 md:gap-3">
             {project.tags.map((tag: string, idx: number) => {
-              const found = tagIconColorList.find(item => item.tag === tag);
-              const iconName = found?.icon || 'file';
+              const found = tagIconColorList.find((item) => item.tag === tag);
+              const iconName = found?.icon || "file";
               const iconStyle = found?.color ? { color: found.color } : {};
               return (
                 <span
                   key={idx}
                   className="bg-[#1c2a3a] text-secondary px-3 md:px-5 py-1 rounded-full font-medium text-sm md:text-base transition-colors duration-200 flex items-center gap-2"
                 >
-                  <DynamicSvgIcon name={iconName} width={16} height={18} style={iconStyle} />
+                  <DynamicSvgIcon
+                    name={iconName}
+                    width={16}
+                    height={18}
+                    style={iconStyle}
+                  />
                   {tag}
                 </span>
               );
@@ -195,7 +254,9 @@ const ProjectDetailClient = ({ project, allProjects }: { project: any, allProjec
           </div>
           {/* Features */}
           <div>
-            <h2 className="text-accent font-semibold mb-2 text-base md:text-lg">Features</h2>
+            <h2 className="text-accent font-semibold mb-2 text-base md:text-lg">
+              Features
+            </h2>
             <ul className="list-disc list-inside text-secondary space-y-1">
               {project.features.map((feature: string, idx: number) => (
                 <li key={idx}>{feature}</li>
@@ -238,17 +299,21 @@ const ProjectDetailClient = ({ project, allProjects }: { project: any, allProjec
             )}
           </div>
           {/* Button View Project */}
-          <button
-            className="inline-block mt-2 px-5 md:px-7 py-2 rounded-md font-semibold shadow
+          <Link
+            href={`${project.link}`}
+            className="text-center inline-block mt-2 px-5 md:px-7 py-2 rounded-md font-semibold shadow
               bg-accent text-black
               hover:ring-2 ring-accent ring-offset-4 active:ring-offset-1 ring-offset-primary transition-all
             "
+            target="_blank"
           >
             View Project 🚀
-          </button>
+          </Link>
           {/* Related Projects */}
           <div className="pb-8">
-            <h2 className="text-accent font-semibold mb-4 text-lg">Related Projects</h2>
+            <h2 className="text-accent font-semibold mb-4 text-lg">
+              Related Projects
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {relatedProjects.map((proj) => (
                 <Link
@@ -258,11 +323,20 @@ const ProjectDetailClient = ({ project, allProjects }: { project: any, allProjec
                 >
                   <div className="bg-black/20 hover:bg-transparent transition-all duration-300 absolute inset-0"></div>
                   <div className="relative w-16 h-10">
-                    <Image src={proj.thumbnail} alt={proj.title} fill className="rounded object-cover" />
+                    <Image
+                      src={proj.thumbnail}
+                      alt={proj.title}
+                      fill
+                      className="rounded object-cover"
+                    />
                   </div>
                   <div>
-                    <div className="font-bold text-secondary mb-1">{proj.title}</div>
-                    <div className="text-xs text-tertiary">{proj.description.slice(0, 50)}...</div>
+                    <div className="font-bold text-secondary mb-1">
+                      {proj.title}
+                    </div>
+                    <div className="text-xs text-tertiary">
+                      {proj.description.slice(0, 50)}...
+                    </div>
                   </div>
                 </Link>
               ))}
@@ -330,15 +404,25 @@ const ProjectDetailClient = ({ project, allProjects }: { project: any, allProjec
           </div>
           <style jsx global>{`
             @keyframes fadeIn {
-              from { opacity: 0; }
-              to { opacity: 1; }
+              from {
+                opacity: 0;
+              }
+              to {
+                opacity: 1;
+              }
             }
             .animate-fadeIn {
               animation: fadeIn 0.3s;
             }
             @keyframes zoomIn {
-              from { transform: scale(0.8); opacity: 0; }
-              to { transform: scale(1); opacity: 1; }
+              from {
+                transform: scale(0.8);
+                opacity: 0;
+              }
+              to {
+                transform: scale(1);
+                opacity: 1;
+              }
             }
             .animate-zoomIn {
               animation: zoomIn 0.3s;

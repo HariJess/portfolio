@@ -1,3 +1,4 @@
+import elementor from "../../../public/icons/Elementor.svg";
 import File from "../../../public/icons/file.svg";
 import Folder from "../../../public/icons/folder.svg";
 import Github from "../../../public/icons/github.svg";
@@ -43,12 +44,14 @@ import postgres from "../../../public/icons/postgres.svg";
 import express from "../../../public/icons/express.svg";
 import bootstrap from "../../../public/icons/bootstrap.svg";
 import firebase from "../../../public/icons/firebase.svg";
+import wordpress from "../../../public/icons/Wordpress.svg";
 
 interface IIconTypes {
   [name: string]: string;
 }
 
 const dataIcon: IIconTypes = {
+  elementor,
   file: File,
   folder: Folder,
   github: Github,
@@ -94,6 +97,7 @@ const dataIcon: IIconTypes = {
   express,
   bootstrap,
   firebase,
+  wordpress,
 };
 
 export default dataIcon;

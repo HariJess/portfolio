@@ -58,63 +58,61 @@ const ProjectsClient = ({
 
         {/* Tags section */}
         <div className="flex flex-col flex-1 border-r border-line w-full h-full">
-          <div className="overflow-auto flex-1">
-            <h4
-              onClick={() => setTagsActive(!tagsActive)}
-              className="sticky top-0 z-10 bg-primary cursor-pointer text-secondary flex gap-2 px-6 p-2 md:p-2 border-b border-line"
-            >
-              <DynamicSvgIcon
-                name="trianglePrimary"
-                className={`w-[10px] ${
-                  tagsActive ? "" : "-rotate-90"
-                } transition-all`}
-              />
-              languages & tools
-            </h4>
+          <h4
+            onClick={() => setTagsActive(!tagsActive)}
+            className="sticky top-0 z-10 bg-primary cursor-pointer text-secondary flex gap-2 px-6 py-2 border-b border-line"
+          >
+            <DynamicSvgIcon
+              name="trianglePrimary"
+              className={`w-[10px] ${
+                tagsActive ? "" : "-rotate-90"
+              } transition-all`}
+            />
+            languages & tools
+          </h4>
 
-            <div
-              className={`transition-all ${
-                tagsActive ? "max-h-full" : "max-h-0"
-              } overflow-hidden`}
-            >
-              {projectsCategoriesApi.map((cat: any) => {
-                const isActive = queryLanguage.includes(cat.query);
-                const found = tagIconColorList.find(
-                  (item) => item.tag === cat.query
-                );
-                const iconName = found?.icon || "file";
-                const iconStyle =
-                  !isActive && found?.color ? { color: found.color } : {};
+          {/* Ici : la zone qui s'ouvre devient scrollable lorsque active */}
+          <div
+            className={`transition-all duration-300 ${
+              tagsActive
+                ? "max-h-[60vh] overflow-auto"
+                : "max-h-0 overflow-hidden"
+            }`}
+          >
+            {projectsCategoriesApi.map((cat: any) => {
+              const isActive = queryLanguage.includes(cat.query);
+              const found = tagIconColorList.find(
+                (item) => item.tag === cat.query
+              );
+              const iconName = found?.icon || "file";
+              const iconStyle =
+                !isActive && found?.color ? { color: found.color } : {};
 
-                // classes de base + classes actives explicites
-                const baseBtn =
-                  "w-full flex gap-2 items-center px-6 py-2 transition-all text-secondary text-left";
-                const activeBtn = "bg-accent text-black";
-                const inactiveBtn = "hover:bg-primary/30";
+              const baseBtn =
+                "w-full flex gap-2 items-center px-6 py-2 transition-all text-secondary text-left";
+              const activeBtn = "bg-accent text-black";
+              const inactiveBtn = "hover:bg-primary/30";
 
-                return (
-                  <button
-                    key={cat.id}
-                    type="button"
-                    aria-pressed={isActive}
-                    onClick={(e) => {
-                      e.stopPropagation(); // empêche toute propagation indésirable
-                      filterCategoryHandler(cat.query);
-                    }}
-                    className={`${baseBtn} ${
-                      isActive ? activeBtn : inactiveBtn
-                    }`}
-                  >
-                    <DynamicSvgIcon
-                      name={iconName}
-                      className={`w-4 h-4`}
-                      style={iconStyle}
-                    />
-                    <span className="text-sm">{cat.query}</span>
-                  </button>
-                );
-              })}
-            </div>
+              return (
+                <button
+                  key={cat.id}
+                  type="button"
+                  aria-pressed={isActive}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    filterCategoryHandler(cat.query);
+                  }}
+                  className={`${baseBtn} ${isActive ? activeBtn : inactiveBtn}`}
+                >
+                  <DynamicSvgIcon
+                    name={iconName}
+                    className="w-4 h-4"
+                    style={iconStyle}
+                  />
+                  <span className="text-sm">{cat.query}</span>
+                </button>
+              );
+            })}
           </div>
         </div>
       </section>
