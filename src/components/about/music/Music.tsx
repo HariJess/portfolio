@@ -81,8 +81,8 @@ const Music = () => {
             ))}
           </div>
         </div>
-        {/* change this part */}
-        <div>
+        {/* Playlist */}
+        {/* <div>
           <h4 className="pb-4 mt-6 text-base font-medium text-secondary">
             //_my-top-playlist
           </h4>
@@ -96,7 +96,7 @@ const Music = () => {
             allowFullScreen
             title="My YouTube Playlist"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -104,6 +104,90 @@ export const projects = [
     ],
   },
 
+  {
+    id: 4,
+    slug: "eden-distribution",
+    title: "Eden Distribution – FMCG Distributor in Madagascar",
+    description:
+      "Eden Distribution is a Madagascan company specializing in the supply of a wide range of fast-moving consumer goods (FMCG) to the market.",
+    thumbnail: "/projects/eden-distribution/thumb.png",
+    screenshots: [
+      "/projects/eden-distribution/1.png",
+      "/projects/eden-distribution/2.png",
+      "/projects/eden-distribution/3.png",
+      "/projects/eden-distribution/4.png",
+      "/projects/eden-distribution/5.png",
+    ],
+    link: "https://edens.mg",
+    tags: ["Next.js", "Tailwind CSS", "Typescript", "Framer Motion"],
+    category: "Website / Distribution Company",
+    status: "Live",
+    created: "2025-11-28",
+    updated: "2025-11-28",
+    contributors: 1,
+    views: 0,
+    progress: 100,
+    funFact:
+      "Eden Distribution employs around 100 people and runs distribution centers in Antananarivo and Toamasina, with a planned expansion to Réunion.",
+    features: [
+      "Online catalogue of FMCG products",
+      "Distribution centers in Antananarivo and Toamasina",
+      "Plan for expansion to Réunion",
+      "Contact form / customer inquiries",
+      "Customer testimonials and reviews",
+    ],
+  },
+
+  {
+    id: 5,
+    slug: "tombola-manager",
+    title: "Tombola Manager – Automated Raffle Application",
+    description:
+      "A full-stack Next.js application designed to manage company raffles with two separate interfaces (admin and client). Includes separate authentication systems (admin token), Firebase data storage, automated Facebook draw announcements via n8n, Docker containerization, and Jest unit testing. The goal is to provide a simple, accessible (responsive + a11y), and robust experience for managing automated raffle draws.",
+    thumbnail: "/projects/tombola-manager/thumb.png",
+    screenshots: [
+      "/projects/tombola-manager/1.png",
+      "/projects/tombola-manager/2.png",
+      "/projects/tombola-manager/3.png",
+      "/projects/tombola-manager/4.png",
+      "/projects/tombola-manager/5.png",
+      "/projects/tombola-manager/6.png",
+      "/projects/tombola-manager/7.png",
+      "/projects/tombola-manager/8.png",
+      "/projects/tombola-manager/9.png",
+    ],
+    link: "https://tombola.edens.mg",
+    tags: [
+      "Next.js",
+      "Tailwind CSS",
+      "Typescript",
+      "Firebase",
+      "Docker",
+      "n8n",
+      "Jest",
+    ],
+    category: "Application / Raffle System",
+    status: "Completed",
+    created: "2025-11-28",
+    updated: "2025-11-28",
+    contributors: 1,
+    views: 0,
+    progress: 100,
+    funFact:
+      "The draw results are automatically posted to Facebook using n8n, with a clean separation between admin and client accounts for enhanced security.",
+    features: [
+      "Admin dashboard: draw management, participants, automation, and settings",
+      "Client interface: ticket purchase, participation, and draw viewing",
+      "Separated authentication (admin token) with role management",
+      "Firebase-based data storage and real-time sync",
+      "Automated Facebook draw announcements via n8n",
+      "Docker containerization for reproducible deployments",
+      "Jest unit testing to ensure robustness",
+      "Responsive design and adherence to accessibility best practices",
+      "Simple UX with transparent draw processes",
+    ],
+  },
+
   // {
   //   id: 14,
   //   slug: "sidata",
@@ -140,6 +224,7 @@ export const projects = [
   //     "Export data to Excel/PDF",
   //   ],
   // },
+
   // {
   //   id: 13,
   //   slug: "garmen",
