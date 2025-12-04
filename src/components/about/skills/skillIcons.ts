@@ -17,10 +17,11 @@ export const backend = [
 ];
 
 export const database = [
-  { name: "Firebase", icon: "firebase", color: "fill-[#FFA500]" },
+  { name: "Firebase", icon: "firebase", color: "fill-[#FFCA28]" },
   { name: "Postgres", icon: "postgres", color: "fill-[#336791]" },
-  { name: "mongoDB", icon: "mongodb", color: "fill-[#13AA52]" },
+  { name: "mongoDB", icon: "mongodb", color: "fill-[#47A248]" },
   { name: "Prisma ORM", icon: "prisma", color: "fill-[#0C344B]" },
+  { name: "SQL Server", icon: "mssql", color: "fill-[#010101]" },
   { name: "MySql", icon: "mysql", color: "fill-[#00758F]" },
 ];
 

@@ -19,7 +19,7 @@ export const tagIconColorList = [
   { tag: "Livewire", icon: "folder", color: "#4E5D94" },
   { tag: "Bootstrap", icon: "bootstrap", color: "#7952B3" },
   { tag: "REST API", icon: "folder", color: "#E535AB" },
-  { tag: "Socket.io", icon: "folder", color: "#010101" },
+  { tag: "Socket.io", icon: "socket", color: "#010101" },
   { tag: "Strapi", icon: "strapi", color: "#8A63D2" },
   { tag: "Prisma", icon: "prisma", color: "#2D3748" },
   { tag: "Vue.js", icon: "vue", color: "#42B883" },
@@ -27,6 +27,10 @@ export const tagIconColorList = [
   { tag: "Postgres", icon: "postgres", color: "#336791" },
   { tag: "wordpress", icon: "wordpress", color: "#21759b" },
   { tag: "elementor", icon: "elementor", color: "#05047E" },
+  { tag: "n8n", icon: "n8n", color: "#EA4B71" },
+  { tag: "Docker", icon: "docker", color: "#0db7ed" },
+  { tag: "Jest", icon: "jest", color: "#E6CCB1" },
+  { tag: "SQL Server", icon: "mssql", color: "#010101" },
 
   // ...tambahkan sesuai kebutuhan
 ];

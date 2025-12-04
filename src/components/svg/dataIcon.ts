@@ -45,6 +45,10 @@ import express from "../../../public/icons/express.svg";
 import bootstrap from "../../../public/icons/bootstrap.svg";
 import firebase from "../../../public/icons/firebase.svg";
 import wordpress from "../../../public/icons/Wordpress.svg";
+import docker from "../../../public/icons/docker.svg";
+import socket from "../../../public/icons/socket.svg";
+import jest from "../../../public/icons/jest.svg";
+import mssql from "../../../public/icons/msql-server.svg";
 
 interface IIconTypes {
   [name: string]: string;
@@ -98,6 +102,10 @@ const dataIcon: IIconTypes = {
   bootstrap,
   firebase,
   wordpress,
+  docker,
+  socket,
+  jest,
+  mssql,
 };
 
 export default dataIcon;
