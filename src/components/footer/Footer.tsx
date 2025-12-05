@@ -176,7 +176,7 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* 3D Games Setting */}
+            {/* 3D Robot Setting */}
             <div
               onClick={() =>
                 context.setEnabled3dSpline(
