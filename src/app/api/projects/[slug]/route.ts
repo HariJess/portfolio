@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { projects } from "@/utils/projects";
+import { projects } from "@/constant/projects";
 
 // GET PROJECT BY ID
 export async function GET(

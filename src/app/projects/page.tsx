@@ -1,37 +1,39 @@
+// app/components/Projects.tsx
 import ProjectsClient from "./ProjectsClient";
+import { projects as rawProjects } from "@/constant/projects";
 
-// TESTING
+// helper pour résoudre la source de projets (tableau | fonction sync | fonction async)
+type ProjectsSource = any[] | (() => any[] | Promise<any[]>);
 
-const fetchProjectsApi = async () => {
-  // const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL || ""}/api/projects`,
-    { cache: "no-store" }
-  );
-  if (!res.ok) {
-    // Untuk debugging, log error response
-    const text = await res.text();
-    throw new Error(`Failed to fetch projects: ${res.status} - ${text}`);
+async function resolveProjects(source: ProjectsSource): Promise<any[]> {
+  if (typeof source === "function") {
+    // cast en any pour autoriser l'appel indépendamment des annotations TS
+    const result = (source as any)();
+    return await Promise.resolve(result);
   }
-  return await res.json();
-};
+  return source ?? [];
+}
 
 const Projects = async () => {
-  const { projects } = await fetchProjectsApi();
+  const projectsData = await resolveProjects(rawProjects as ProjectsSource);
 
-  // Deduplicate projects by id
+  const projectsArray = Array.isArray(projectsData) ? projectsData : [];
+
+  // Déduplication par id
   const uniqueProjects = Array.from(
-    new Map(projects.map((item: any) => [item.id, item])).values()
+    new Map(projectsArray.map((item: any) => [item.id, item])).values()
   );
 
-  // Build categories from tags
+  // Construire les catégories à partir des tags (sécurisation si tags absent)
   const allTags = Array.from(
-    new Set(uniqueProjects.flatMap((p: any) => p.tags))
+    new Set(
+      uniqueProjects.flatMap((p: any) => (Array.isArray(p.tags) ? p.tags : []))
+    )
   );
+
   const projectsCategoriesApi = allTags.map((tag, i) => ({
     id: i,
     query: tag,
-    // Optionally add icon mapping here
   }));
 
   return (
