@@ -4,7 +4,10 @@ import ProjectsClient from "./ProjectsClient";
 
 const fetchProjectsApi = async () => {
   // const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
-  const res = await fetch(`/api/projects`, { cache: "no-store" });
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL || ""}/api/projects`,
+    { cache: "no-store" }
+  );
   if (!res.ok) {
     // Untuk debugging, log error response
     const text = await res.text();
