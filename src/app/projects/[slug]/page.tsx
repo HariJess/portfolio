@@ -1,25 +1,25 @@
+// app/projects/[slug]/page.tsx
 import ProjectDetailClient from "./ProjectDetailClient";
+import { projects as rawProjects } from "@/constant/projects";
+import { notFound } from "next/navigation";
 
-// TESTING
+async function getAllProjects(): Promise<any[]> {
+  return Array.isArray(rawProjects) ? rawProjects : [];
+}
 
-const fetchProjectsApi = async () => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || ''}/api/projects`, {
-    cache: 'no-store',
-  });
-  return await res.json();
-};
-
-const fetchProjectBySlug = async (slug: string) => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || ''}/api/projects/${slug}`, {
-    cache: 'no-store',
-  });
-  if (!res.ok) throw new Error('Project not found');
-  return await res.json();
-};
+async function getProjectBySlug(slug: string): Promise<any | undefined> {
+  const list = await getAllProjects();
+  return list.find((p: any) => p.slug === slug);
+}
 
 const ProjectDetailPage = async ({ params }: { params: { slug: string } }) => {
-  const { projects } = await fetchProjectsApi();
-  const project = await fetchProjectBySlug(params.slug);
+  const projects = await getAllProjects();
+  const project = await getProjectBySlug(params.slug);
+
+  if (!project) {
+    // renvoie un 404 côté serveur (Next.js App Router)
+    notFound();
+  }
 
   return (
     <div className="bg-gradient-to-br from-primary to-accent/30 h-full">
