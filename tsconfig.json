@@ -27,8 +27,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
-    // "src/app/api/now-playing/route.ts"
+    ".next/types/**/*.ts",
+    "src/app/api/projects/route.ts"
   ],
   "exclude": ["node_modules"]
 }
