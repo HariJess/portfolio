@@ -187,7 +187,7 @@ const Footer = () => {
               <div className="flex gap-2 items-center justify-between">
                 <div className="flex gap-2 items-center">
                   <DynamicSvgIcon name="_3d" className="w-6" />
-                  <p>Enable 3D Games</p>
+                  <p>Enable 3D Robot Mode</p>
                 </div>
                 <ButtonEnableDisable
                   enabled={context.enabled3dSpline}
@@ -195,14 +195,14 @@ const Footer = () => {
                 />
               </div>
               <p className="text-[12px] mt-2 [word-spacing:-2px]">
-                Note: Enable 3d Games may cause lagging.
+                Note: 3D rendering may slightly impact performance.
               </p>
               <p
                 className={`text-[12px] mt-2 [word-spacing:-2px] text-accent ${
                   !context.enabled3dSpline && "hidden"
                 }`}
               >
-                Hint: Go to Home page to play the games, enjoy!
+                Hint: Visit the Home page to view the 3D robot in action, enjoy!
               </p>
             </div>
           </div>
