@@ -133,6 +133,19 @@ const Navbar = () => {
                 </Link>
               );
             })}
+            {/* Navbar-right - Contact Link */}
+            <Link
+              href="/contact"
+              className={`px-6 border-b border-line py-8 text-center button-hover flex items-center
+              ${
+                pathname === "/contact" ||
+                (subPath.length > 2 && "/" + subPath[1] === "/contact")
+                  ? active
+                  : ""
+              } `}
+            >
+              <span>_contact</span>
+            </Link>
           </ul>
         </div>
       </nav>

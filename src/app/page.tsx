@@ -27,9 +27,12 @@ export default function Home() {
             <p className="italic">// Based in Antananarivo,</p>
             <p className="italic flex gap-2 items-center">
               // Madagascar
-              <span className="flex flex-col">
-                <span className="bg-red-500 block w-6 h-[6px]"></span>
-                <span className="bg-white block w-6 h-[6px]"></span>
+              <span className="flex">
+                <span className="bg-white block w-2 h-4"></span>
+                <span className="flex flex-col">
+                  <span className="bg-red-500 block w-5 h-2"></span>
+                  <span className="bg-green-500 block w-5 h-2"></span>
+                </span>
               </span>
             </p>
           </div>

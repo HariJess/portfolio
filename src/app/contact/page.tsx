@@ -156,7 +156,7 @@ const Contact = () => {
           <section className="flex-1 min-w-0 flex items-center justify-center p-4 sm:p-6 md:p-12 overflow-y-auto">
             <form className="w-full max-w-md space-y-6" onSubmit={handleSubmit}>
               <div>
-                <h2 className="text-secondary text-xl md:text-2xl font-medium my-8 pt-12">
+                <h2 className="text-secondary text-xl md:text-2xl font-medium my-8 mt-12 pt-12">
                   Send me a message
                 </h2>
               </div>
