@@ -49,7 +49,7 @@ const Footer = () => {
         <div className="flex">
           <div
             onClick={() => setShowSettings(!showSettings)}
-            className="px-4 h-auto cursor-link flex-1 border-r border-line button-hover h-full cursor-pointer hover:opacity-80 transition-opacity"
+            className="px-4 py-3 md:py-2 cursor-link flex-1 border-r border-line button-hover h-full cursor-pointer hover:opacity-80 transition-opacity justify-center items-center flex"
           >
             <DynamicSvgIcon name="settings" className="w-6" />
           </div>
@@ -61,7 +61,7 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/harijesy-rakotoarisoa-5301872b6"
               target="_blank"
-              className={`px-4 h-auto cursor-link flex-1 border-r border-line button-hover h-full`}
+              className={`px-4 py-3 md:py-2 cursor-link flex-1 border-r border-line button-hover h-full justify-center items-center flex`}
             >
               <DynamicSvgIcon name="linkedin" className="w-5" />
             </a>
