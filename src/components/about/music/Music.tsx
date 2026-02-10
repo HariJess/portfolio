@@ -37,7 +37,7 @@ const mockArtists = [
 
 const Music = () => {
   return (
-    <section className="grid md:grid-cols-2 h-full">
+    <section className="grid grid-cols-1 lg:grid-cols-2 h-full">
       <div className="border-r border-line overflow-auto md:block hidden">
         <MusicCode />
       </div>

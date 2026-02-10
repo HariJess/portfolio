@@ -24,7 +24,7 @@ const experiences = [
     year: "2024 - Present",
     title: "Web Developer / Intern — Network & Telecom Administrator",
     company: "EDEN DISTRIBUTION — Antananarivo (Anosizato)",
-    period: "07/2024 – Present",
+    period: "07/2024 – 12/2025",
     details: [
       "Analyzed and documented the company’s IT architecture.",
       "Studied the infrastructure diagram (server distribution, switches, access points).",
@@ -79,7 +79,7 @@ const Bio = () => {
   ];
 
   return (
-    <div className="grid md:grid-cols-2 h-full">
+    <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
       <div className="overflow-auto border-r border-line md:block hidden">
         <BioCode />
       </div>

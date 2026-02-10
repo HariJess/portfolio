@@ -299,7 +299,7 @@ const ProjectDetailClient = ({
             )}
           </div>
           {/* Button View Project */}
-          <Link
+          {/* <Link
             href={`${project.link}`}
             className="text-center inline-block mt-2 px-5 md:px-7 py-2 rounded-md font-semibold shadow
               bg-accent text-black
@@ -308,13 +308,13 @@ const ProjectDetailClient = ({
             target="_blank"
           >
             View Project 🚀
-          </Link>
+          </Link> */}
           {/* Related Projects */}
           <div className="pb-8">
             <h2 className="text-accent font-semibold mb-4 text-lg">
               Related Projects
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
               {relatedProjects.map((proj) => (
                 <Link
                   href={`/projects/${proj.slug}`}

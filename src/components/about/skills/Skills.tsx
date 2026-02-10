@@ -4,8 +4,8 @@ import SkillsCode from "./SkillsCode.mdx";
 
 const Skills = ({ skills, title }: any) => {
   return (
-    <section className="grid md:grid-cols-2 h-full">
-      <div className="border-r border-line overflow-auto md:block hidden">
+    <section className="grid grid-cols-1 lg:grid-cols-2 h-full">
+      <div className="hidden border-r border-line overflow-auto md:block ">
         <SkillsCode />
       </div>
       <div className="overflow-auto px-4 py-4">
