@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "prebuild": "rimraf dist",
+    "build": "next build && tsc --project tsconfig.server.json",
+    "start": "cross-env NODE_ENV=production node dist/server.js",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@mdx-js/loader": "^2.3.0",
@@ -20,6 +22,8 @@
     "@types/react": "18.2.18",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.14",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.2.3",
     "eslint": "8.46.0",
     "eslint-config-next": "^14.0.4",
     "next": "^14.0.4",
@@ -45,6 +49,7 @@
     "@svgr/webpack": "^8.0.1",
     "@tailwindcss/typography": "^0.5.10",
     "@types/mdx": "^2.0.13",
+    "rimraf": "^6.1.0",
     "@types/nodemailer": "^6.4.17"
   }
 }

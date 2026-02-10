@@ -75,8 +75,8 @@ const ProjectsClient = ({
           <div
             className={`transition-all duration-300 ${
               tagsActive
-                ? "max-h-[60vh] overflow-auto"
-                : "max-h-0 overflow-hidden"
+                ? "h-full overflow-auto"
+                : "h-0 overflow-hidden"
             }`}
           >
             {projectsCategoriesApi.map((cat: any) => {
@@ -131,7 +131,7 @@ const ProjectsClient = ({
           )}
 
           {projects.length > 0 && (
-            <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-6 py-8">
+            <div className="grid lg:grid-cols-3 grid-cols-1 gap-6 py-8">
               {projects.map((project: any) => (
                 <Link
                   href={`/projects/${project.slug}`}

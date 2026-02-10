@@ -86,9 +86,9 @@ const Contact = () => {
 
   return (
     <div className="h-full overflow-y-auto overflow-x-hidden flex flex-col">
-      <div className="flex flex-col lg:flex-row flex-1 min-h-0">
+      <div className="flex flex-col md:flex-row flex-1 min-h-0">
         {/* Left Section - Sidebar with Social Links */}
-        <section className="flex max-w-full md:max-w-[275px] w-full border-b lg:border-b-0">
+        <section className="flex max-w-full md:max-w-[275px] w-full">
           <div className="px-4 py-4 border-r border-line lg:block hidden">
             <DynamicSvgIcon name="mail" className="w-6" />
           </div>
@@ -107,7 +107,7 @@ const Contact = () => {
                 connect
               </h4>
               <nav
-                className={`flex lg:flex-col gap-4 px-6 my-2 transition-maxHeight ${
+                className={`flex-col gap-4 px-6 my-2 transition-maxHeight ${
                   contactActive ? "max-h-60" : "max-h-0"
                 } overflow-hidden`}
               >
@@ -115,7 +115,7 @@ const Contact = () => {
                   <a
                     target="_blank"
                     href={contact.href}
-                    className="cursor-link flex items-center gap-3 text-tertiary hover:text-accent transition-colors text-sm hover:button-hover hover:rounded-lg"
+                    className="cursor-link flex items-center gap-3 py-2 text-tertiary hover:text-accent transition-colors text-sm hover:button-hover hover:rounded-lg"
                     key={contact.name}
                     rel="noopener noreferrer"
                   >
@@ -123,7 +123,7 @@ const Contact = () => {
                       name={contact.icon}
                       className="w-4 h-4 fill-current flex-shrink-0"
                     />
-                    <span className="hidden lg:inline">{contact.name}</span>
+                    <span className="inline">{contact.name}</span>
                   </a>
                 ))}
               </nav>
