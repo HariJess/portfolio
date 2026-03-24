@@ -17,7 +17,7 @@ export const useAppContext = () => useContext(AppContext)
 export const AppProvider = ( { children }: { children: ReactNode } ) => {
     // const mini3dGame = useMemo(() => <Mini3dGame />, [])
     const [enabledMusic, setEnabledMusic] = useState(false);
-    const [enabled3dSpline, setEnabled3dSpline] = useState(false);
+    const [enabled3dSpline, setEnabled3dSpline] = useState(true);
     const [screenSize, setScreenSize] = useState(0);
     const [smallDevices, setSmallDevices] = useState(false);
     const [topArtistEndpoint, setTopArtistEndpoint] = useState('')
