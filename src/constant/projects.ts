@@ -79,8 +79,8 @@ export const projects = [
   {
     "id": 3,
     "slug": "pnrse-comoros",
-    "title": "PNRSE – Intelligent Reforestation Tracking System",
-    "description": "An innovative governmental platform dedicated to the 'National Reforestation Without Failure' (PNRSE) plan in Comoros. The system integrates AI and automation to ensure seedling survival and reforestation data transparency across the islands.",
+    "title": "PNRSE – Water Sector Rehabilitation Management System",
+    "description": "A specialized governmental platform for the 'Projet de Réhabilitation du Secteur de l'Eau' (PNRSE) in Comoros. This system tracks infrastructure progress, water distribution networks, and maintenance schedules to ensure sustainable access to clean water across the islands.",
     "thumbnail": "/projects/pnrse/thumb.png",
     "screenshots": [
       "/projects/pnrse/1.png",
@@ -91,115 +91,25 @@ export const projects = [
       "/projects/pnrse/6.png"
     ],
     "link": "https://pnrse-web-app.vercel.app/", 
-    "tags": ["Next.js", "Node.js", "Prisma", "Mysql"],
-    "category": "Web & Mobile App / AI Automation",
+    "tags": ["Next.js", "Node.js", "Prisma", "MySQL", "n8n"],
+    "category": "Web & Mobile App / Infrastructure Management",
     "status": "In progress",
     "created": "2026-02-11",
     "updated": "2026-03-31",
     "contributors": 5,
     "views": 4500,
     "progress": 85,
-    "funFact": "The PNRSE system leverages n8n workflows to synchronize field reports in real-time, even from the most remote reforestation sites in Moroni and surrounding regions.",
+    "funFact": "The system automates the tracking of borehole data and reservoir levels, providing critical real-time insights for water management in the Moroni region.",
     "features": [
-      "End-to-end data flow automation using n8n for real-time field reporting",
-      "AI Agent with RAG architecture for intelligent report analysis and agent assistance",
-      "Interactive dashboard for monitoring seedling growth and survival rates",
-      "Precision geolocation system to map and track national reforestation zones",
-      "Multi-user management with secure access for ministerial and regional environmental agents"
+      "Real-time monitoring of water infrastructure rehabilitation projects",
+      "Dynamic dashboard for mapping and tracking water distribution networks",
+      "Automated field reporting and data synchronization for technical agents",
+      "Maintenance scheduling and resource allocation management for public utilities"
     ]
   },
 
-
-
-  // DELETE
-  // {
-  //   id: 4,
-  //   slug: "eden-distribution",
-  //   title: "Eden Distribution – FMCG Distributor in Comore",
-  //   description:
-  //     "Eden Distribution is a Madagascan company specializing in the supply of a wide range of fast-moving consumer goods (FMCG) to the market.",
-  //   thumbnail: "/projects/eden-distribution/thumb.png",
-  //   screenshots: [
-  //     "/projects/eden-distribution/1.png",
-  //     "/projects/eden-distribution/2.png",
-  //     "/projects/eden-distribution/3.png",
-  //     "/projects/eden-distribution/4.png",
-  //     "/projects/eden-distribution/5.png",
-  //   ],
-  //   link: "https://edens.mg",
-  //   tags: ["Next.js", "Tailwind CSS", "Typescript", "Framer Motion"],
-  //   category: "Website / Distribution Company",
-  //   status: "Live",
-  //   created: "2025-11-28",
-  //   updated: "2025-11-28",
-  //   contributors: 1,
-  //   views: 0,
-  //   progress: 100,
-  //   funFact:
-  //     "Eden Distribution employs around 100 people and runs distribution centers in Antananarivo and Toamasina, with a planned expansion to Réunion.",
-  //   features: [
-  //     "Online catalogue of FMCG products",
-  //     "Distribution centers in Antananarivo and Toamasina",
-  //     "Plan for expansion to Réunion",
-  //     "Contact form / customer inquiries",
-  //     "Customer testimonials and reviews",
-  //   ],
-  // },
-
-  // DELETE
-  // {
-  //   id: 5,
-  //   slug: "tombola-manager",
-  //   title: "Tombola Manager – Automated Raffle Application",
-  //   description:
-  //     "A full-stack Next.js application designed to manage company raffles with two separate interfaces (admin and client). Includes separate authentication systems (admin token), Firebase data storage, automated Facebook draw announcements via n8n, Docker containerization, and Jest unit testing. The goal is to provide a simple, accessible (responsive + a11y), and robust experience for managing automated raffle draws.",
-  //   thumbnail: "/projects/tombola-manager/thumb.png",
-  //   screenshots: [
-  //     "/projects/tombola-manager/1.png",
-  //     "/projects/tombola-manager/2.png",
-  //     "/projects/tombola-manager/3.png",
-  //     "/projects/tombola-manager/4.png",
-  //     "/projects/tombola-manager/5.png",
-  //     "/projects/tombola-manager/6.png",
-  //     "/projects/tombola-manager/7.png",
-  //     "/projects/tombola-manager/8.png",
-  //     "/projects/tombola-manager/9.png",
-  //   ],
-  //   link: "https://tombola.edens.mg",
-  //   tags: [
-  //     "Next.js",
-  //     "Tailwind CSS",
-  //     "Typescript",
-  //     "Firebase",
-  //     "Docker",
-  //     "n8n",
-  //     "Jest",
-  //   ],
-  //   category: "Application / Raffle System",
-  //   status: "Completed",
-  //   created: "2025-11-28",
-  //   updated: "2025-11-28",
-  //   contributors: 1,
-  //   views: 0,
-  //   progress: 100,
-  //   funFact:
-  //     "The draw results are automatically posted to Facebook using n8n, with a clean separation between admin and client accounts for enhanced security.",
-  //   features: [
-  //     "Admin dashboard: draw management, participants, automation, and settings",
-  //     "Client interface: ticket purchase, participation, and draw viewing",
-  //     "Separated authentication (admin token) with role management",
-  //     "Firebase-based data storage and real-time sync",
-  //     "Automated Facebook draw announcements via n8n",
-  //     "Docker containerization for reproducible deployments",
-  //     "Jest unit testing to ensure robustness",
-  //     "Responsive design and adherence to accessibility best practices",
-  //     "Simple UX with transparent draw processes",
-  //   ],
-  // },
-
-  // CONSERVE
   {
-    id: 6,
+    id: 4,
     slug: "financial-edu-mobile-app",
     title: "Mobile Financial Education Application – Union of the Comoros",
     description:
@@ -299,6 +209,124 @@ export const projects = [
       testingAndAdjustments: "Additional 2 weeks",
     },
   },
+
+  {
+    "id": 5,
+    "slug": "my-travel-agency",
+    "title": "My Travel Agency – Premium Tourism & Booking Platform",
+    "description": "A comprehensive travel management platform designed to showcase luxury destinations and streamline the booking process for international tourists.",
+    "thumbnail": "/projects/my-travel-agency/thumb.png",
+    "screenshots": [
+      "/projects/my-travel-agency/1.png",
+      "/projects/my-travel-agency/2.png",
+      "/projects/my-travel-agency/3.png",
+      "/projects/my-travel-agency/4.png",
+      "/projects/my-travel-agency/5.png"
+    ],
+    "link": "https://travel-agency-tmp.vercel.app/", 
+    "tags": ["Next.js", "Tailwind CSS", "Typescript", "Framer Motion", "Lucide React"],
+    "category": "Website / Tourism & Hospitality",
+    "status": "Live",
+    "created": "2026-01-28",
+    "updated": "2026-02-11",
+    "contributors": 1,
+    "views": 1850,
+    "progress": 100,
+    "funFact": "The platform features a smooth destination filtering system that reduced the user's booking path by 40% compared to traditional agency sites.",
+    "features": [
+      "Dynamic destination catalog with advanced filtering by category and price",
+      "Interactive booking system with real-time availability checks",
+      "Smooth UI animations using Framer Motion for a premium user experience",
+      "SEO-optimized architecture to attract international travelers",
+      "Integrated testimonial section and high-resolution gallery for immersive storytelling"
+    ]
+  },
+
+  // DELETE
+  // {
+  //   id: 4,
+  //   slug: "eden-distribution",
+  //   title: "Eden Distribution – FMCG Distributor in Comore",
+  //   description:
+  //     "Eden Distribution is a Madagascan company specializing in the supply of a wide range of fast-moving consumer goods (FMCG) to the market.",
+  //   thumbnail: "/projects/eden-distribution/thumb.png",
+  //   screenshots: [
+  //     "/projects/eden-distribution/1.png",
+  //     "/projects/eden-distribution/2.png",
+  //     "/projects/eden-distribution/3.png",
+  //     "/projects/eden-distribution/4.png",
+  //     "/projects/eden-distribution/5.png",
+  //   ],
+  //   link: "https://edens.mg",
+  //   tags: ["Next.js", "Tailwind CSS", "Typescript", "Framer Motion"],
+  //   category: "Website / Distribution Company",
+  //   status: "Live",
+  //   created: "2025-11-28",
+  //   updated: "2025-11-28",
+  //   contributors: 1,
+  //   views: 0,
+  //   progress: 100,
+  //   funFact:
+  //     "Eden Distribution employs around 100 people and runs distribution centers in Antananarivo and Toamasina, with a planned expansion to Réunion.",
+  //   features: [
+  //     "Online catalogue of FMCG products",
+  //     "Distribution centers in Antananarivo and Toamasina",
+  //     "Plan for expansion to Réunion",
+  //     "Contact form / customer inquiries",
+  //     "Customer testimonials and reviews",
+  //   ],
+  // },
+
+  // DELETE
+  // {
+  //   id: 5,
+  //   slug: "tombola-manager",
+  //   title: "Tombola Manager – Automated Raffle Application",
+  //   description:
+  //     "A full-stack Next.js application designed to manage company raffles with two separate interfaces (admin and client). Includes separate authentication systems (admin token), Firebase data storage, automated Facebook draw announcements via n8n, Docker containerization, and Jest unit testing. The goal is to provide a simple, accessible (responsive + a11y), and robust experience for managing automated raffle draws.",
+  //   thumbnail: "/projects/tombola-manager/thumb.png",
+  //   screenshots: [
+  //     "/projects/tombola-manager/1.png",
+  //     "/projects/tombola-manager/2.png",
+  //     "/projects/tombola-manager/3.png",
+  //     "/projects/tombola-manager/4.png",
+  //     "/projects/tombola-manager/5.png",
+  //     "/projects/tombola-manager/6.png",
+  //     "/projects/tombola-manager/7.png",
+  //     "/projects/tombola-manager/8.png",
+  //     "/projects/tombola-manager/9.png",
+  //   ],
+  //   link: "https://tombola.edens.mg",
+  //   tags: [
+  //     "Next.js",
+  //     "Tailwind CSS",
+  //     "Typescript",
+  //     "Firebase",
+  //     "Docker",
+  //     "n8n",
+  //     "Jest",
+  //   ],
+  //   category: "Application / Raffle System",
+  //   status: "Completed",
+  //   created: "2025-11-28",
+  //   updated: "2025-11-28",
+  //   contributors: 1,
+  //   views: 0,
+  //   progress: 100,
+  //   funFact:
+  //     "The draw results are automatically posted to Facebook using n8n, with a clean separation between admin and client accounts for enhanced security.",
+  //   features: [
+  //     "Admin dashboard: draw management, participants, automation, and settings",
+  //     "Client interface: ticket purchase, participation, and draw viewing",
+  //     "Separated authentication (admin token) with role management",
+  //     "Firebase-based data storage and real-time sync",
+  //     "Automated Facebook draw announcements via n8n",
+  //     "Docker containerization for reproducible deployments",
+  //     "Jest unit testing to ensure robustness",
+  //     "Responsive design and adherence to accessibility best practices",
+  //     "Simple UX with transparent draw processes",
+  //   ],
+  // },
 
   // DELETE
   // {
