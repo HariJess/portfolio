@@ -242,6 +242,41 @@ export const projects = [
     ]
   },
 
+  {
+    id: 5,
+    slug: "airpods-landing-page",
+    title: "AirPods Pro – Premium Product Landing Page",
+    description:
+      "A premium product landing page inspired by Apple's AirPods Pro universe. Built to showcase advanced frontend skills including scroll-based interactions, custom animations, and a high-end dark UI design.",
+    thumbnail: "/projects/airpods/thumb.png",
+    screenshots: [
+      "/projects/airpods/1.png",
+      "/projects/airpods/2.png",
+      "/projects/airpods/3.png",
+      "/projects/airpods/4.png",
+      "/projects/airpods/5.png"
+    ],
+    link: "https://your-demo-link.vercel.app",
+    tags: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "TypeScript"],
+    category: "Website / Product Landing Page",
+    status: "In Progress",
+    created: "2026-03-29",
+    updated: "2026-04-01",
+    contributors: 1,
+    views: 0,
+    progress: 35,
+    funFact:
+      "The hero section features 3 distinct image transition animations — each one hand-crafted to match the mood of its feature: energy, immersion, and spatial depth.",
+    features: [
+      "Scroll-based interactive feature showcase",
+      "3 custom Framer Motion image transitions per section",
+      "Touch swipe detection for mobile navigation",
+      "Auto-rotating features on mobile (every 3s)",
+      "Dark premium UI design built from scratch",
+      "Fully responsive across all screen sizes",
+      "Vertical dot navigation on desktop / horizontal on mobile",
+    ],
+  }
   // DELETE
   // {
   //   id: 4,
