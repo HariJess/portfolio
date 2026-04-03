@@ -250,10 +250,10 @@ export const projects = [
       "A premium product landing page inspired by Apple's AirPods Pro universe. Built to showcase advanced frontend skills including scroll-based interactions, custom animations, and a high-end dark UI design.",
     thumbnail: "/projects/airpods/thumb.png",
     screenshots: [
-      "/projects/airpods/1.png",
-      "/projects/airpods/2.png",
-      "/projects/airpods/3.png",
-      "/projects/airpods/4.png",
+      "/projects/airpods/1.PNG",
+      "/projects/airpods/2.PNG",
+      "/projects/airpods/3.PNG",
+      "/projects/airpods/4.PNG",
       "/projects/airpods/5.png"
     ],
     link: "https://your-demo-link.vercel.app",
