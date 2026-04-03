@@ -256,7 +256,7 @@ export const projects = [
       "/projects/airpods/4.PNG",
       "/projects/airpods/5.png"
     ],
-    link: "https://your-demo-link.vercel.app",
+    link: "https://ipods-shop-ecommerce.vercel.app/",
     tags: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "TypeScript"],
     category: "Website / Product Landing Page",
     status: "In Progress",
